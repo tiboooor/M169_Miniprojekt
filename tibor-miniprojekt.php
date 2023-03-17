@@ -8,12 +8,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            /**
-             * @name BasislehrjahrICTUebungPHP
-             * @version 1.6
-             * @description Design fuer PHP Seite
-             * @author Tibor Blasko
-            */
             body {
                 background-color: rgb(44, 115, 148);
             }
