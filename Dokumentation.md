@@ -11,9 +11,9 @@ RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli</br>
 RUN apt-get update && apt-get upgrade -y</br>
 CMD ["/bin/sh"]</br>
 
-In diesem Fall verwenden wir Apache udn nicht NGINX, da die Erfahrung mit Apache grösser ist.</br>
+In diesem Fall verwenden wir Apache und nicht NGINX, da die Erfahrung mit Apache grösser ist.</br>
 Die Datei index.php und tibor-miniprojekt.php soll in das Verzeichnis /var/www/html des Containers kopiert werden.</br>
-Um auf eine Datenbank zugreifen zu können, soll mysqli installiert und aktiviert werden.</br>
+Um auf eine Datenbank zugreifen zu können, soll die php-mysqli Extension installiert und aktiviert werden.</br>
 Anschliessend wird noch ein apt update und upgrade ausgeführt.</br>
 
 ![image](https://user-images.githubusercontent.com/98404509/225875996-3266d3c4-edcf-4a4e-92f7-1369346782cd.png)
