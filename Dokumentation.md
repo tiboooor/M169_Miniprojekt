@@ -24,7 +24,52 @@ Deren Inhalt kann in diesem Repository inspiziert werden.</br>
 ![image](https://user-images.githubusercontent.com/98404509/225876971-9c919394-53ce-4fb1-9db2-394dc9106ea0.png)
 
 Jetzt brauchen wir zuerst noch einen MariaDB Container zu erstellen und eine Datenbank zu importieren.</br>
-Das SQL-File befindet sich ebenfalls im Repository.</br>
+Das SQL-File hat folgenden Inhalt.</br>
+
+```SQL
+-- Host: 127.0.0.1
+-- Erstellungszeit: 11. Feb 2022 um 13:58
+-- Server-Version: 10.4.22-MariaDB
+-- PHP-Version: 8.0
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Datenbank: `lieblingsgetraenke`
+--
+
+DROP DATABASE IF EXISTS lieblingsgetraenke;
+
+CREATE DATABASE lieblingsgetraenke;
+
+USE lieblingsgetraenke;
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `person`
+--
+
+CREATE TABLE `person` (
+  `Vorname` text NOT NULL,
+  `Nachname` text NOT NULL,
+  `Fachrichtung` text NOT NULL,
+  `Wunschgetraenk` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+```
+
 Zusätzlich erstellen wir ein Volume.</br>
 
 ![image](https://user-images.githubusercontent.com/98404509/225881595-987a5a13-5bdb-4446-afe9-ef21464022fb.png)
