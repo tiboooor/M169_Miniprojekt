@@ -35,7 +35,7 @@ Der Inhalt der Index PHP Seite ist wie folgt:</br>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            <!-- Zu Dokuzwecken hier nicht gelistet. Fuer mehr Details File im Repository "index.php" inspizieren. -->
+            <!-- Zu Dokuzwecken hier nicht gelistet. Fuer mehr Details File "index.php" im Repository inspizieren. -->
         </style>
         <title>Tibor-Miniprojekt</title>
     </head>
